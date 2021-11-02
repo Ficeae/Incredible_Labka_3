@@ -2,17 +2,15 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define str_size 100
-
 int main() {
-    char str[str_size];
+    char str[100];
     int count;
     int i;
     i = 0;
     count = 0;
 
     printf("Enter your string: ");
-    fgets(str, sizeof str, stdin);
+    fgets(str, sizeof(str), stdin);
 
     while (str[i] != '\0') {
 
@@ -26,6 +24,6 @@ int main() {
         i++;
     }
 
-    printf("\n\nThere is %d letters&numbers in your string", count);
+    printf("\nThere is %d letters&numbers in your string", count);
     return 0;
 }
